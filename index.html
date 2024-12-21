@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect 4</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(7, 70px);
+      grid-template-rows: repeat(6, 70px);
+      gap: 5px;
+      margin: 20px auto;
+    }
+    .cell {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+    .player1 {
+      background-color: red;
+    }
+    .player2 {
+      background-color: yellow;
+    }
+    .disabled {
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container text-center">
+  <h1>Connect 4</h1>
+  <div id="message"></div>
+  <div class="board" id="board"></div>
+  <button class="btn btn-primary mt-3" id="resetBtn">Reset the game</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
